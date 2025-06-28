@@ -24,6 +24,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
   },
   // base: '/', // 默认'/'。如果你想将你的网站部署到如 https://foo.github.io/bar/，那么 base 应该被设置成 "/bar/",（否则页面将失去样式等文件）
   base: '/myblog/',
+  port: 8888,
 
   // 主题配置
   themeConfig: {
@@ -59,13 +60,16 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '计算机基础',
-        link: '/计算机基础/',
+        link: '/CS-Basics/',
         items: [
           {
             text: '计算机组成原理', link: '/pages/b3c563/'
           },
           {
             text: '计算机网络', link: '/pages/98f8f4/'
+          },
+          {
+            text: '算法', link: '/pages/606700/'
           },
         ]
       },
@@ -76,11 +80,14 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: 'Docker', link: '/pages/044e10/'
           },
+          {
+            text: 'Linux', link: '/pages/521b3b/'
+          },
         ]
       },
       {
         text: '中间件',
-        link: '/中间件/',
+        link: '/middleware/',
         items: [
           {
             text: 'Redis', link: '/pages/aac218/'
@@ -92,31 +99,68 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
       },
       {
         text: '其它组件',
-        link: '/其它组件/',
+        link: '/other-wares/',
         items: [
           {
             text: '日志框架', link: '/pages/b5c3ce/'
+          },
+          {
+            text: '常用工具', link: '/pages/ccf2f8/'
+          },
+          {
+            text: '工作流', link: '/pages/ac5bb2/'
+          },
+          {
+            text: '加密与安全', link: '/pages/994ca0/'
           },
         ]
       },
       {
         text: '前端',
-        link: '/前端/',
+        link: '/front-end/',
         items: [
           {
+            text: 'Nodejs', link: '/pages/9b90ca/'
+          },
+          {
             text: '博客部署教程', link: '/pages/d1ec3d/'
+          },
+          {
+            text: 'nginx', link: '/pages/0e0348/'
           },
         ]
       },
       {
-        text: '其它教程',
-        link: '/其它教程/',
+        text: '优秀教程',
+        link: '/tutorial/',
+        items: [
+          {
+            text: 'mall教程', link: '/mall-tutorial/'
+          },
+        ]
+      },
+      {
+        text: '其它',
+        link: '/others/',
         items: [
           {
             text: '疑难杂症解决办法', link: '/pages/c736ca/'
           },
           {
             text: '待解决问题', link: '/pages/ef6421/'
+          },
+
+        ]
+      },
+      {
+        text: '架构设计',
+        link: '/architecture/',
+        items: [
+          {
+            text: '架构设计入门', link: '/pages/182ba1/'
+          },
+          {
+            text: '设计模式', link: '/pages/d8c29b/'
           },
         ]
       },
@@ -179,7 +223,7 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
 
     // 博主信息 (显示在首页侧边栏)
     blogger: {
-      avatar: '/img/logo.png',
+      avatar: '/myblog/img/logo.png',
       name: 'zyg',
       slogan: '(○\'◡\'○)',
     },
