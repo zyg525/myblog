@@ -68,6 +68,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           {
             text: '计算机网络', link: '/pages/98f8f4/'
           },
+          {
+            text: '算法', link: '/pages/606700/'
+          },
         ]
       },
       {
@@ -76,6 +79,9 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
         items: [
           {
             text: 'Docker', link: '/pages/044e10/'
+          },
+          {
+            text: 'Linux', link: '/pages/521b3b/'
           },
         ]
       },
@@ -142,6 +148,19 @@ export default defineConfig4CustomTheme<VdoingThemeConfig>({
           },
           {
             text: '待解决问题', link: '/pages/ef6421/'
+          },
+
+        ]
+      },
+      {
+        text: '架构设计',
+        link: '/architecture/',
+        items: [
+          {
+            text: '架构设计入门', link: '/pages/182ba1/'
+          },
+          {
+            text: '设计模式', link: '/pages/d8c29b/'
           },
         ]
       },
