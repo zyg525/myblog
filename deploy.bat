@@ -1,6 +1,9 @@
 @echo off
 chcp 65001 >nul
 
+:: 加载 node 环境
+call nvm use 20.8.1
+
 echo [1/4] Pushing source to remote...
 git push origin source
 if %errorlevel% neq 0 (
