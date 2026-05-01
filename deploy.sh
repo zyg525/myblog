@@ -9,6 +9,9 @@ commit_info=`git describe --all --always --long`
 dist_path=docs/.vuepress/dist # 打包生成的文件夹路径
 push_branch=master # 推送的分支
 
+# 推送源码到source分支
+git push origin source
+
 # 生成静态文件
 #npm run build
 yarn build:win
