@@ -42,7 +42,7 @@ echo [4/5] Deploying to github pages...
 git init
 git add -A
 git commit -m "deploy"
-git push -f https://github.com/zyg525/myblog.git HEAD:master
+git push -f git@github.com:zyg525/myblog.git HEAD:master
 
 echo [5/5] Cleaning up dist...
 cd /d "%~dp0"
